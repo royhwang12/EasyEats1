@@ -24,7 +24,7 @@ export default class LoginPage extends Component {
             <View>
 
                 
-            <Text>roy</Text>
+            <Text>Sup</Text>
 
             
 
