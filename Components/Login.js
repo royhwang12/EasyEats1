@@ -33,17 +33,19 @@ export default class LoginPage extends Component {
 
 
             
-
+        <View style={styles.views}>
             <TextInput
             placeholder="Username"
             style={styles.input}
             
             />
+        </View>
+        <View style={styles.views}>
             <TextInput
             placeholder="Password"
             style={styles.input}
             />
-
+        </View>
 
           <View style={styles.login}>
             <Button
@@ -76,6 +78,8 @@ input: {
 },
 login: {
 margin: 20,
- 
+},
+views: {
+    margin: 15,
 }
 });
