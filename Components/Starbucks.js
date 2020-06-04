@@ -52,7 +52,6 @@ export default class MainPage extends Component {
             <Button
             onPress={() => navigate('Review')}
             title="Write a Review"
-            color="blue"
             />
           </View>
         </ScrollView>
@@ -97,7 +96,9 @@ export default class MainPage extends Component {
           height: 50,
           width: 50,
           alignSelf: 'center',
-          marginTop: 20
+          marginTop: 20,
+          borderWidth: 1,
+          borderRadius: 9
           
         },
         texts3: {
