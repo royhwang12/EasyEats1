@@ -81,13 +81,14 @@ export default class MainPage extends Component {
         texts: {
             fontSize: 50,
             color: 'white',
-            fontFamily: 'Optima-BoldItalic',
+            fontStyle: 'italic',
+            fontWeight: 'bold',
             justifyContent: 'center',
           },
           texts2: {
             fontSize: 25,
             color: 'white',
-            fontFamily: 'Optima-Bold',
+            fontWeight: 'bold',
             justifyContent: 'center',
             paddingTop: 75
             
@@ -102,7 +103,7 @@ export default class MainPage extends Component {
         texts3: {
           fontSize: 20,
           color: 'black',
-          fontFamily: 'Optima-Bold',
+          fontWeight: 'bold',
           paddingTop: 20,
          alignSelf: 'center'
           
@@ -110,7 +111,7 @@ export default class MainPage extends Component {
       texts4: {
         fontSize: 15,
         color: 'black',
-        fontFamily: 'Optima-Bold',
+        fontWeight: 'bold',
         paddingTop: 10,
        alignSelf: 'flex-start'
         
@@ -118,7 +119,6 @@ export default class MainPage extends Component {
     texts5: {
       fontSize: 15,
       color: 'black',
-      fontFamily: 'Optima',
       paddingTop: 10,
      alignSelf: 'flex-start'
       

@@ -43,7 +43,8 @@ const styles = StyleSheet.create({
     texts: {
         fontSize: 50,
         color: 'white',
-        fontFamily: 'Optima-BoldItalic',
+        fontStyle:'italic',
+        fontWeight: 'bold',
         justifyContent: 'center',
         alignSelf: 'center'
     },
@@ -63,7 +64,7 @@ const styles = StyleSheet.create({
       texts2: {
         fontSize: 30,
         color: 'black',
-        fontFamily: 'Optima-Bold',
+        fontWeight: 'bold',
         justifyContent: 'center',
         alignSelf: 'center',
         paddingVertical: 125
