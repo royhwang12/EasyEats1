@@ -22,12 +22,12 @@ export default class LoginPage extends Component {
 
         return(
             <View>
-                <View>
+                
                     <Image
                     style={styles.image}
                     source={require('../assets/capstone-logo.png')}
                     />
-                </View>
+              
 
                 
             <Text>Sup</Text>
@@ -60,7 +60,7 @@ export default class LoginPage extends Component {
 
 const styles=StyleSheet.create ({
 image: {
-    flex: 2,
+   
     height: 300,
     width: 300,
     justifyContent: 'center',
