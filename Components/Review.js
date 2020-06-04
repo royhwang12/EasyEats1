@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 
-import {View, StyleSheet, Image, Text, ImageBackground, Button, ScrollView } from 'react-native';
+import {View, StyleSheet, Image, Text, ImageBackground, Button, ScrollView, TextInput } from 'react-native';
 import { Rating, AirbnbRating } from 'react-native-elements';
 
 export default class ReviewPage extends Component {
 
     render() {
-
+        const { navigate } = this.props.navigation;
         return(
             <View>
+            <View>    
             <View style={styles.containerTop}>
             <ImageBackground source={require('../assets/Starbucksbackground.jpg')}
    style={styles.imagetop}>
@@ -19,20 +20,31 @@ export default class ReviewPage extends Component {
        <Text style={styles.texts}>Write a Review</Text>
        </View>
        <View>
-       <View>
            <Text style={styles.texts2}>Rating</Text>
 <Rating
 type='star'
 ratingColor="gold"
 ratingBackgroundColor="white"
 ratingCount={5}
-imageSize={40}
+imageSize={50}
 onFinishRating={this.ratingCompleted}
-style={{ paddingVertical: 0 }}
+style={{ borderWidth: 3, marginTop: 20, marginLeft: 60, marginRight: 60}}
 />
 
 </View>
        </View>
+       <View>
+         <Text style={styles.texts3}>Comments</Text>
+         <TextInput
+         style={{borderWidth: 3, padding: 75, marginLeft: 10, marginRight: 10}}
+         />
+           </View>
+           <View style={{margin: 10}}>
+            <Button
+            onPress={() => navigate('Starbucks')}
+            title="Submit"
+            />
+          </View>
        </View>
 
         )
@@ -67,7 +79,15 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         justifyContent: 'center',
         alignSelf: 'center',
-        paddingVertical: 125
+        marginTop: 125,
+      },
+      texts3: {
+        fontSize: 30,
+        color: 'black',
+        fontWeight: 'bold',
+        justifyContent: 'center',
+        alignSelf: 'center',
+        marginTop: 50,
       },
 
 })
