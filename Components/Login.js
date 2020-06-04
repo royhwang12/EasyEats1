@@ -55,6 +55,14 @@ export default class LoginPage extends Component {
             style={styles.login}
             />
           </View>
+          <View style={styles.login}>
+            <Button
+            onPress={() => navigate('Search')}
+            title="Login"
+            color="green"
+            style={styles.login}
+            />
+          </View>
         </View>
 
         )
