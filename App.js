@@ -9,6 +9,7 @@ import Login from './Components/Login';
 import Main from './Components/Main';
 import Search from './Components/Search';
 import Starbucks from './Components/Starbucks';
+import Review from './Components/Review';
 
 
 
@@ -18,6 +19,7 @@ const MainNavigator = createStackNavigator({
   Main: {screen: Main},
   Search: {screen: Search},
   Starbucks: {screen: Starbucks},
+  Review: {screen: Review},
   
 
 

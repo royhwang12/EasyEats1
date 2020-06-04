@@ -1,28 +1,25 @@
 import React, {Component} from 'react';
 
-import {View, StyleSheet, Image, Text, ImageBackground } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {View, StyleSheet, Image, Text, ImageBackground, Button, ScrollView } from 'react-native';
 import { Rating, AirbnbRating } from 'react-native-elements';
 
 export default class MainPage extends Component {
 
     render() {
-
+      const { navigate } = this.props.navigation;
         return(
-        <View>
+        <ScrollView>
            <View style={styles.containerTop}>
                  <ImageBackground source={require('../assets/Starbucksbackground.jpg')}
         style={styles.imagetop}>
-        </ImageBackground>
-             </View>   
-        <View>
-            <Text style={styles.texts}>Starbucks</Text>
+                      <Text style={styles.texts}>Starbucks</Text>
             <Text style={styles.texts2}>1730 152 St, Surrey, BC</Text>
+        </ImageBackground>
+            </View>
           <View> 
             <Text style={styles.texts3}>Accessibility</Text>
-          </View>
          </View>
-            <View style={{ flexDirection: 'reverse-row'}}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-evenly'}}>
             <Image style={styles.disability} 
             source={require('../assets/hands.png')}/>
             <Image style={styles.disability} 
@@ -33,18 +30,32 @@ export default class MainPage extends Component {
             source={require('../assets/autism.png')}/>
             </View>
             <View>
-            <Rating
-  type='star'
-  ratingColor="gold"
-  ratingBackgroundColor="white"
-  ratingCount={5}
-  imageSize={40}
-  onFinishRating={this.ratingCompleted}
-  style={{ paddingVertical: 40 }}
-/>
-
-        </View>
-        </View>
+              <Text style={styles.texts3}>Overall Rating</Text>
+              <Image
+              source={require('../assets/5star.png')}
+              style={{height: 50, width: 300, alignSelf: 'center', marginTop: 15 }}/>
+            </View>
+            <View style={{paddingTop: 30}}>
+              <Text style={styles.texts3}>Reviews</Text>
+              <Text style={styles.texts4}>Roy Huang</Text>
+              <Image
+              source={require('../assets/5star.png')}
+              style={{ height: 12.5, width: 75, alignSelf: 'flex-start', marginTop: 5}} />
+              <Text style={styles.texts5}>This Starbucks location is very accessible, with features like wheelchair ramps and washrooms. This Starbucks also has very helpful staff, I strongly recommend this location. </Text>
+            </View>
+            <View style={{margin: 15}}>
+              <Button
+              title="More Reviews"
+              style={styles.buttons}/>
+            </View>
+            <View style={{margin: 10}}>
+            <Button
+            onPress={() => navigate('Review')}
+            title="Write a Review"
+            color="blue"
+            />
+          </View>
+        </ScrollView>
 
 
 
@@ -85,7 +96,7 @@ export default class MainPage extends Component {
           height: 50,
           width: 50,
           alignSelf: 'center',
-          marginTop: 40
+          marginTop: 20
           
         },
         texts3: {
@@ -96,6 +107,25 @@ export default class MainPage extends Component {
          alignSelf: 'center'
           
       },
+      texts4: {
+        fontSize: 15,
+        color: 'black',
+        fontFamily: 'Optima-Bold',
+        paddingTop: 10,
+       alignSelf: 'flex-start'
+        
+    },
+    texts5: {
+      fontSize: 15,
+      color: 'black',
+      fontFamily: 'Optima',
+      paddingTop: 10,
+     alignSelf: 'flex-start'
+      
+  },
+  buttons: {
+    margin: 50,
+  },
 
         })
 
