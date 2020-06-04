@@ -64,6 +64,14 @@ export default class LoginPage extends Component {
             style={styles.login}
             />
           </View>
+          <View style={styles.login}>
+            <Button
+            onPress={() => navigate('Starbucks')}
+            title="Starbucks"
+            color="green"
+            style={styles.login}
+            />
+          </View>
         </View>
 
         )
@@ -89,6 +97,6 @@ login: {
 margin: 20,
 },
 views: {
-    margin: 15,
+    margin: 5,
 }
 });
