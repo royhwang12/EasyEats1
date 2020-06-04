@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import { StyleSheet, Text, View } from 'react-native';
@@ -10,6 +10,7 @@ import Main from './Components/Main';
 import Search from './Components/Search';
 import Starbucks from './Components/Starbucks';
 import Review from './Components/Review';
+import BottomNavigationTabs from './Components/BottomNavigationTabs';
 
 
 
@@ -20,6 +21,8 @@ const MainNavigator = createStackNavigator({
   Search: {screen: Search},
   Starbucks: {screen: Starbucks},
   Review: {screen: Review},
+  BottomNavigationTabs: {screen: BottomNavigationTabs},
+  
   
 
 
