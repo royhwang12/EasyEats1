@@ -5,12 +5,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Login from './Components/Login';
 import Main from './Components/Main';
+import Search from './Components/Search';
 
 
 const MainNavigator = createStackNavigator({
   Login: {screen: Login},
-  Main: {screen: Main}
-
+  Main: {screen: Main},
+  Search: {screen: Search}
+  
 
 
 })

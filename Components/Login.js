@@ -5,6 +5,7 @@ import {View, Text, TextInput, StyleSheet, Image, Button} from 'react-native';
 export default class LoginPage extends Component {
     static navigationOptions = {
         title: 'Login',
+        title: 'Search',
     };
 
     constructor(props) {
@@ -58,7 +59,7 @@ export default class LoginPage extends Component {
           <View style={styles.login}>
             <Button
             onPress={() => navigate('Search')}
-            title="Login"
+            title="Search"
             color="green"
             style={styles.login}
             />
