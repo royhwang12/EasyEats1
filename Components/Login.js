@@ -22,33 +22,37 @@ export default class LoginPage extends Component {
 
         return(
             <View>
-                
+                <View>
                     <Image
-                    style={styles.image}
-                    source={require('../assets/capstone-logo.png')}
+                      style={styles.image}
+                      source={require('../assets/capstone-logo.png')}
                     />
-              
+                </View>
 
                 
-            <Text>Sup</Text>
+
 
             
 
             <TextInput
             placeholder="Username"
-
+            style={styles.input}
             
             />
             <TextInput
             placeholder="Password"
+            style={styles.input}
             />
 
 
-
+          <View style={styles.login}>
             <Button
             onPress={() => navigate('Main')}
             title="Login"
+            color="green"
+            style={styles.login}
             />
+          </View>
         </View>
 
         )
@@ -60,9 +64,18 @@ export default class LoginPage extends Component {
 
 const styles=StyleSheet.create ({
 image: {
-   
     height: 300,
     width: 300,
-    justifyContent: 'center',
+    alignSelf: 'center',
+},
+input: {
+    padding: 5,
+    borderColor: 'green',
+    borderWidth: 2,
+    fontSize: 20,
+},
+login: {
+margin: 20,
+ 
 }
 });
