@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
 
-import {View, StyleSheet, Image, Text} from 'react-native';
+import {View, StyleSheet, Image, Text, Button} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+import {NavigationContainer, TabActions} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { NavigationEvents } from 'react-navigation';
 
 export default class MainPage extends Component {
-
+   
     render() {
-
+        const Tab = createBottomTabNavigator();
         return(
+            <View>
             <ScrollView>
                 <Text style={styles.title}>Where do you want to go?</Text>
                 <Text style={styles.subtitle}>Restaurants</Text>
@@ -169,7 +173,12 @@ export default class MainPage extends Component {
                 </ScrollView>
                 
             </ScrollView>
-
+            
+            <View horizontal={true}>
+            <Button title="Search" onClick={() => ('Search')}/>
+            <Button title="Main" onClick={() => ('Main')}/>
+            </View>
+            </View>
 
         )
 
