@@ -1,15 +1,18 @@
 import React, {Component} from 'react';
 
 import {View, StyleSheet, Image, Text, Button} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import {NavigationContainer, TabActions} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { NavigationEvents } from 'react-navigation';
 
 export default class MainPage extends Component {
+
+    
    
     render() {
         const Tab = createBottomTabNavigator();
+        const {navigate} = this.props.navigation;
         return(
             <View>
             <ScrollView>
@@ -22,11 +25,13 @@ export default class MainPage extends Component {
 
                 
                 <View>
+                <TouchableOpacity onPress={() => navigate('Starbucks')}>
                 <Image
                 source={require('../assets/starbucks.jpg')}
                 style={styles.image}
 
                 />
+                </TouchableOpacity>
                 <Image
                 source={require('../assets/5star.png')}
                 style={styles.star}
