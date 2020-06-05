@@ -193,7 +193,7 @@ export default class MainPage extends Component {
 
                     }}
                 >
-                     <Icon name='home' type='material' onPress={() => navigate('Main')} />
+                     <Icon name='home' type='material' onPress={() => navigate('NewProfile')} />
                      <Icon name='search' type='material' onPress={() => navigate('Search')} />  
                 </View>
 
