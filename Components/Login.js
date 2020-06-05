@@ -1,5 +1,16 @@
 import React, {Component} from 'react';
+import {createAppContainer, NavigationEvents,} from 'react-navigation';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createStackNavigator} from 'react-navigation-stack';
 import {View, Text, TextInput, StyleSheet, Image, Button} from 'react-native';
+
+import {NavigationContainer} from '@react-navigation/native';
+
+
+
+
+
+
 
 
 export default class LoginPage extends Component {
@@ -18,8 +29,9 @@ export default class LoginPage extends Component {
     }
     render() {
         const { onChangeText } = this;
-        const { navigate } = this.props.navigation;
         const { username, password } = this.state;
+        const  {navigate} = this.props.navigation;
+        
 
         return(
             <View>
@@ -56,14 +68,7 @@ export default class LoginPage extends Component {
             style={styles.login}
             />
           </View>
-          <View style={styles.login}>
-            <Button
-            onPress={() => navigate('Search')}
-            title="Search"
-            color="green"
-            style={styles.login}
-            />
-          </View>
+          
           <View style={styles.login}>
             <Button
             onPress={() => navigate('NewProfile')}
@@ -72,15 +77,12 @@ export default class LoginPage extends Component {
             style={styles.login}
             />
           </View>
-          <View style={styles.login}>
-            <Button
-            onPress={() => navigate('ToolBar')}
-            title="Toolbar"
-            color="green"
-            style={styles.login}
-            />
+          
+
+         
+          
+         
           </View>
-        </View>
 
         )
 

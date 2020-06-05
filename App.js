@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {createAppContainer} from 'react-navigation';
+import {createAppContainer, } from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -15,6 +15,13 @@ import NewProfile from './Components/NewProfile';
 
 
 
+
+
+
+
+
+
+
 const MainNavigator = createStackNavigator({
 
   Login: {screen: Login},
@@ -22,8 +29,8 @@ const MainNavigator = createStackNavigator({
   Search: {screen: Search},
   Starbucks: {screen: Starbucks},
   Review: {screen: Review},
-  BottomNavigationTabs: {screen: BottomNavigationTabs},
   NewProfile: {screen: NewProfile},
+  BottomNavigationTabs: {screen: BottomNavigationTabs},
   
 
 

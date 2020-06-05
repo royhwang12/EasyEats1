@@ -74,8 +74,8 @@ export default class MainPage extends Component {
           flex: 1,
           resizeMode: 'cover',
           justifyContent: 'center',
-          height: 150,
-          width: 375,
+          height: 200,
+          width: 420,
         },
         texts: {
             fontSize: 50,

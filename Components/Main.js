@@ -5,13 +5,14 @@ import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import {NavigationContainer, TabActions} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { NavigationEvents } from 'react-navigation';
+import { Icon } from 'react-native-elements';
 
 export default class MainPage extends Component {
 
     
    
     render() {
-        const Tab = createBottomTabNavigator();
+        
         const {navigate} = this.props.navigation;
         return(
             <View>
@@ -176,13 +177,28 @@ export default class MainPage extends Component {
                 </View>
 
                 </ScrollView>
-                
-            </ScrollView>
             
-            <View horizontal={true}>
-            <Button title="Search" onClick={() => ('Search')}/>
-            <Button title="Main" onClick={() => ('Main')}/>
-            </View>
+            </ScrollView>
+
+            <View
+                    style={{
+                        flexDirection: 'row',
+                        position: 'absolute',
+                        bottom: 0,
+                        backgroundColor: 'green',
+                        justifyContent: 'space-around',
+                        alignItems: 'center',
+                        width: '100%',
+                        padding: 10
+
+                    }}
+                >
+                     <Icon name='home' type='material' onPress={() => navigate('Main')} />
+                     <Icon name='search' type='material' onPress={() => navigate('Search')} />  
+                </View>
+
+            
+            
             </View>
 
         )

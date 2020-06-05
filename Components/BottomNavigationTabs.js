@@ -17,9 +17,8 @@ export default class BottomNavigationTabs extends Component {
 
                 }}
             >
-                <Icon name='home' type='material' onPress={() => navigate('Main')} />
-                <Icon name='price-ribbon' type='entypo' onPress={() => navigate('Search')} />
-           
+                <Icon name='Main' type='material' onPress={() => navigate('Main')} />
+                <Icon name='Search' type='entypo' onPress={() => navigate('Search')} />
             </View>
         );
     }

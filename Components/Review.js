@@ -8,7 +8,7 @@ export default class ReviewPage extends Component {
     render() {
         const { navigate } = this.props.navigation;
         return(
-            <View>
+            <ScrollView>
             <View>    
             <View style={styles.containerTop}>
             <ImageBackground source={require('../assets/Starbucksbackground.jpg')}
@@ -45,7 +45,7 @@ style={{ borderWidth: 3, marginTop: 20, marginLeft: 60, marginRight: 60}}
             title="Submit"
             />
           </View>
-       </View>
+       </ScrollView>
 
         )
     }
