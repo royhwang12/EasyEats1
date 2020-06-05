@@ -66,8 +66,8 @@ export default class LoginPage extends Component {
           </View>
           <View style={styles.login}>
             <Button
-            onPress={() => navigate('Starbucks')}
-            title="Starbucks"
+            onPress={() => navigate('NewProfile')}
+            title="New Profile"
             color="green"
             style={styles.login}
             />

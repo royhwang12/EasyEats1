@@ -11,6 +11,7 @@ import Search from './Components/Search';
 import Starbucks from './Components/Starbucks';
 import Review from './Components/Review';
 import BottomNavigationTabs from './Components/BottomNavigationTabs';
+import NewProfile from './Components/NewProfile';
 
 
 
@@ -22,7 +23,7 @@ const MainNavigator = createStackNavigator({
   Starbucks: {screen: Starbucks},
   Review: {screen: Review},
   BottomNavigationTabs: {screen: BottomNavigationTabs},
-  
+  NewProfile: {screen: NewProfile},
   
 
 
