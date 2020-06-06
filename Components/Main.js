@@ -215,6 +215,7 @@ export default class MainPage extends Component {
 const styles = StyleSheet.create({
 title: {
     color: 'white',
+    fontFamily: 'Roboto',
     fontSize: 50,
     fontWeight: 'bold',
     fontStyle: 'italic',
@@ -222,6 +223,7 @@ title: {
     
 },
 subtitle: {
+    textAlign: 'center',
     fontSize: 36,
     fontWeight: 'bold',
 },
@@ -243,6 +245,7 @@ image: {
 },
 
 smallText: {
+    textAlign: 'center',
     fontSize: 17,
     fontWeight: 'bold',
     alignSelf: 'center',
