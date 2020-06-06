@@ -13,12 +13,10 @@ export default class ReviewPage extends Component {
             <View style={styles.containerTop}>
             <ImageBackground source={require('../assets/Starbucksbackground.jpg')}
    style={styles.imagetop}>
-                
+               <Text style={styles.texts}>Write a Review</Text> 
    </ImageBackground>
        </View>
-       <View>
-       <Text style={styles.texts}>Write a Review</Text>
-       </View>
+
        <View>
            <Text style={styles.texts2}>Rating</Text>
 <Rating
@@ -58,7 +56,9 @@ const styles = StyleSheet.create({
         fontStyle:'italic',
         fontWeight: 'bold',
         justifyContent: 'center',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        paddingBottom: 80
+
     },
     containerTop: {
         flex: 1,
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         justifyContent: 'center',
         height: 150,
-        width: 375,
+        width: "100%",
       },
       texts2: {
         fontSize: 30,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         justifyContent: 'center',
         alignSelf: 'center',
-        marginTop: 125,
+        marginTop: 25,
       },
       texts3: {
         fontSize: 30,
