@@ -17,8 +17,11 @@ export default class MainPage extends Component {
         return(
             <View>
             <ScrollView>
+                <View style={{backgroundColor: 'green', }}>
                 <Text style={styles.title}>Where do you want to go?</Text>
+                </View>
                 <Text style={styles.subtitle}>Restaurants</Text>
+            
 
                 <ScrollView
                 horizontal={true}
@@ -177,7 +180,7 @@ export default class MainPage extends Component {
                 </View>
 
                 </ScrollView>
-            
+                <View style={{height: 50, width: "100%", backgroundColor: 'white'}}></View>
             </ScrollView>
 
             <View
@@ -189,7 +192,8 @@ export default class MainPage extends Component {
                         justifyContent: 'space-around',
                         alignItems: 'center',
                         width: '100%',
-                        padding: 10
+                        padding: 10,
+                    
 
                     }}
                 >
@@ -210,9 +214,11 @@ export default class MainPage extends Component {
 
 const styles = StyleSheet.create({
 title: {
-    color: 'green',
-    fontSize: 45,
+    color: 'white',
+    fontSize: 50,
     fontWeight: 'bold',
+    fontStyle: 'italic',
+    
     
 },
 subtitle: {
