@@ -15,7 +15,7 @@ export default class MainPage extends Component {
         const {navigate} = this.props.navigation;
         return( 
             <ScrollView>
-            <View style={{backgroundColor: 'green', height: 75}}>
+            <View style={{backgroundColor: '#36E5FF', height: 75}}>
              <Text style={styles.NewAccountText}>Create New Account</Text>
             </View>
            <View>

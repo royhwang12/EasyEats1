@@ -64,7 +64,7 @@ export default class LoginPage extends Component {
             <Button
             onPress={() => navigate('Main')}
             title="Login"
-            color="green"
+            color="#36E5FF"
             style={styles.login}
             />
           </View>
@@ -73,7 +73,7 @@ export default class LoginPage extends Component {
             <Button
             onPress={() => navigate('NewProfile')}
             title="New Profile"
-            color="green"
+            color="#36E5FF"
             style={styles.login}
             />
           </View>
@@ -99,7 +99,7 @@ image: {
 },
 input: {
     padding: 5,
-    borderColor: 'green',
+    borderColor: '#36E5FF',
     borderWidth: 2,
     fontSize: 20,
 },
