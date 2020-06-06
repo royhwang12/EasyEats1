@@ -17,7 +17,7 @@ export default class MainPage extends Component {
         return(
             <View>
             <ScrollView>
-                <View style={{backgroundColor: 'green', }}>
+                <View style={{backgroundColor: '#36FF3D', }}>
                 <Text style={styles.title}>Where do you want to go?</Text>
                 </View>
                 <Text style={styles.subtitle}>Restaurants</Text>
@@ -188,7 +188,7 @@ export default class MainPage extends Component {
                         flexDirection: 'row',
                         position: 'absolute',
                         bottom: 0,
-                        backgroundColor: 'green',
+                        backgroundColor: '#36FF3D',
                         justifyContent: 'space-around',
                         alignItems: 'center',
                         width: '100%',
