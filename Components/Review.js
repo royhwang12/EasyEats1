@@ -11,10 +11,9 @@ export default class ReviewPage extends Component {
             <ScrollView>
             <View>    
             <View style={styles.containerTop}>
-            <ImageBackground source={require('../assets/Starbucksbackground.jpg')}
-   style={styles.imagetop}>
+
                <Text style={styles.texts}>Write a Review</Text> 
-   </ImageBackground>
+
        </View>
 
        <View>
@@ -57,7 +56,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         justifyContent: 'center',
         alignSelf: 'center',
-        paddingBottom: 80
+        paddingBottom: 50,
+        paddingTop: 40
 
     },
     containerTop: {
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         justifyContent:'space-around',
         alignItems: 'center',
+        backgroundColor: '#36E5FF'
       },
       imagetop: {
         flex: 1,
