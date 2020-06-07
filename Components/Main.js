@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-
+import * as Font from 'expo-font';
 import {View, StyleSheet, Image, Text, Button} from 'react-native';
 import { ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
 import {NavigationContainer, TabActions} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { NavigationEvents } from 'react-navigation';
 import { Icon } from 'react-native-elements';
+
+
+
 
 export default class MainPage extends Component {
 
@@ -17,7 +20,7 @@ export default class MainPage extends Component {
         return(
             <View>
             <ScrollView>
-                <View style={{backgroundColor: '#36FF3D', }}>
+                <View style={{backgroundColor: '#36E5FF', }}>
                 <Text style={styles.title}>Where do you want to go?</Text>
                 </View>
                 <Text style={styles.subtitle}>Restaurants</Text>
@@ -188,7 +191,7 @@ export default class MainPage extends Component {
                         flexDirection: 'row',
                         position: 'absolute',
                         bottom: 0,
-                        backgroundColor: '#36FF3D',
+                        backgroundColor: '#36E5FF',
                         justifyContent: 'space-around',
                         alignItems: 'center',
                         width: '100%',
@@ -214,10 +217,10 @@ export default class MainPage extends Component {
 
 const styles = StyleSheet.create({
 title: {
-    color: 'white',
-    fontFamily: 'Roboto',
+    color: 'black',
+    
     fontSize: 50,
-    fontWeight: 'bold',
+    
     fontStyle: 'italic',
     
     
