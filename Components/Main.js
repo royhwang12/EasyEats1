@@ -218,7 +218,7 @@ export default class MainPage extends Component {
 const styles = StyleSheet.create({
 title: {
     color: 'black',
-    
+
     fontSize: 50,
     
     fontStyle: 'italic',
