@@ -13,7 +13,16 @@ import Starbucks from './Components/Starbucks';
 import Review from './Components/Review';
 import BottomNavigationTabs from './Components/BottomNavigationTabs';
 import NewProfile from './Components/NewProfile';
+
 import Map from './Components/Map';
+
+import Pool from './Components/Pool';
+
+
+
+
+
+
 
 
 
@@ -26,7 +35,10 @@ const MainNavigator = createStackNavigator({
   Review: {screen: Review},
   NewProfile: {screen: NewProfile},
   BottomNavigationTabs: {screen: BottomNavigationTabs},
-  Map: {screen: Map},
+  Pool: {screen: Pool},
+  Map: {screen: Map}
+  
+
 
   
 })

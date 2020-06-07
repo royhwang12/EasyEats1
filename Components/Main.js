@@ -88,11 +88,13 @@ export default class MainPage extends Component {
 
               
                 <View>
+                <TouchableOpacity onPress={() => navigate('Pool')}>
                 <Image
                 source={require('../assets/grandview.jpg')}
                 style={styles.image}
 
                 />
+                </TouchableOpacity>
                 <Image
                 source={require('../assets/5star.png')}
                 style={styles.star}
