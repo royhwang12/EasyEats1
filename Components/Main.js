@@ -145,11 +145,13 @@ export default class MainPage extends Component {
 
               
                 <View>
+                <TouchableOpacity onPress={() => navigate('Mall')}>
                 <Image
                 source={require('../assets/guildford.jpg')}
                 style={styles.image}
 
                 />
+                </TouchableOpacity>
                 <Image
                 source={require('../assets/3star.png')}
                 style={styles.star}

@@ -13,11 +13,6 @@ import MapView from 'react-native-maps';
 export default class Map extends Component {
 
 
-constructor(props) {
-    super(props);
-
-    
-}
 
     render() {
         return(
