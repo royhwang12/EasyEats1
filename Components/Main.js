@@ -6,6 +6,7 @@ import {NavigationContainer, TabActions} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { NavigationEvents } from 'react-navigation';
 import { Icon } from 'react-native-elements';
+import { Marker } from 'react-native-maps';
 
 
 

@@ -22,7 +22,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "EasyEntry",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "EasyEntry",
+      "versionCode": 1
     }
   }
 }
